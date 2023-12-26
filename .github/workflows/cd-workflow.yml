@@ -22,7 +22,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
-          artifacts: '[{"name": "app-devops.jar","version": "1.${{ github.run_number }}","semanticVersion": "1.${{ github.run_number }}.0","repositoryName": "SSaravanan84/ServiceNow_DevOps_Chg_CI"}]'
+          artifacts: '[{"name": "app-devops.jar","version": "1.10","semanticVersion": "1.10.0","repositoryName": "SSaravanan84/ServiceNow_DevOps_Chg_CI"}]'
           package-name: 'app-devops-change-velocity.war'
 
 
