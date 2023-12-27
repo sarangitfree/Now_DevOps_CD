@@ -27,6 +27,7 @@ jobs:
 
   registerpackage2:
     name: Register Package2
+    needs: registerpackage
     runs-on: ubuntu-latest
     steps:
       - name: ServiceNow Register Package
@@ -42,7 +43,7 @@ jobs:
 
   changereq:
     name: ChangeRequest
-    needs: registerpackage
+    needs: registerpackage2
     runs-on: ubuntu-latest
     steps:     
       - name: ServiceNow Change
