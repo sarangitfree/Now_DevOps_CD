@@ -25,6 +25,20 @@ jobs:
           artifacts: '[{"name": "test-devops-now.jar","version": "1.16","semanticVersion": "1.16.0","repositoryName": "ServiceNow_DevOps_Chg_CI"}]'
           package-name: 'test-devops-change-velocity.war'
 
+  registerpackage2:
+    name: Register Package2
+    runs-on: ubuntu-latest
+    steps:
+      - name: ServiceNow Register Package
+        uses: ServiceNow/servicenow-devops-register-package@v2.0.0
+        with:
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          context-github: ${{ toJSON(github) }}
+          job-name: 'Register Package'
+          artifacts: '[{"name": "test-devops-now.jar","version": "1.15","semanticVersion": "1.15.0","repositoryName": "ServiceNow_DevOps_Chg_CI"}]'
+          package-name: 'test-devops-change-velocity.war'
 
   changereq:
     name: ChangeRequest
