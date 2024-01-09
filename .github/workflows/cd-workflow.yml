@@ -22,7 +22,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
-          artifacts: '[{"name": "saran-test-app-devops.jar","version": "3.14","semanticVersion": "3.14.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{name": "saran-test-app-devops.jar","version": "3.15","semanticVersion": "3.15.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
+          artifacts: '[{"name": "saran-test-app-devops.jar","version": "3.17","semanticVersion": "3.17.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{name": "saran-test-app-devops.jar","version": "3.18","semanticVersion": "3.18.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
           package-name: 'saran-test-app-devops-change-velocity.war'
           
 
