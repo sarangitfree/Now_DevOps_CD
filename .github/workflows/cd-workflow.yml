@@ -22,20 +22,10 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
-          artifacts: '[{"name": "saran-test-app-devops.jar","version": "3.12","semanticVersion": "3.12.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
+          artifacts: '[{"name": "saran-test-app-devops.jar","version": "3.14","semanticVersion": "3.14.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{name": "saran-test-app-devops.jar","version": "3.15","semanticVersion": "3.15.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
           package-name: 'saran-test-app-devops-change-velocity.war'
           
 
-      - name: ServiceNow Register Package 2
-        uses: ServiceNow/servicenow-devops-register-package@v2.0.0
-        with:
-          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
-          instance-url: ${{ secrets.SN_INSTANCE_URL }}
-          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
-          context-github: ${{ toJSON(github) }}
-          job-name: 'Register Package'
-          artifacts: '[{"name": "saran-test-app-devops.jar","version": "3.13","semanticVersion": "3.13.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
-          package-name: 'saran-test-app-devops-change-velocity.war'
 
   changereq:
     name: ChangeRequest
