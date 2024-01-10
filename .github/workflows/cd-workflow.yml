@@ -16,7 +16,7 @@ jobs:
     name: Register Package
     runs-on: ubuntu-latest
     steps:
-      - name: ServiceNow Register Package 1
+      - name: ServiceNow Register Package
         uses: ServiceNow/servicenow-devops-register-package@v2.0.0
         with:
           devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
