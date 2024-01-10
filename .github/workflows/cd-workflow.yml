@@ -24,7 +24,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
-          artifacts: '[{"name": "saran-test-app-devops-chg-22.jar","version": "3.22","semanticVersion": "3.22.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-23.jar","version": "3.23","semanticVersion": "3.23.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
+          artifacts: '[{"name": "saran-test-app-devops-chg-24.jar","version": "3.24","semanticVersion": "3.24.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-25.jar","version": "3.25","semanticVersion": "3.25.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
           package-name: 'saran-test-app-devops-chg-velo-${{ github.run_number }}.war'
 
     
