@@ -25,8 +25,7 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
           artifacts: 
-                    '[{"name": "saran-test-app-devops-chg-22.jar","version": "3.22","semanticVersion": "3.22.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-23.jar","version": "3.23","semanticVersion": "3.23.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-24.jar","version": "3.24","semanticVersion": "3.24.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-25.jar","version": "3.25","semanticVersion": "3.25.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
-          package-name: 'saran-test-app-devops-chg-velo-${{ github.run_number }}.war'
+'[{"name": "saran-test-app-devops-chg-26.jar","version": "3.26","semanticVersion": "3.26.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-27.jar","version": "3.27","semanticVersion": "3.27.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-28.jar","version": "3.28","semanticVersion": "3.28.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'          package-name: 'saran-test-app-devops-chg-velo-${{ github.run_number }}.war'
 
     
   changereq:
