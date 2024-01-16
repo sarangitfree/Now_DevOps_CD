@@ -22,4 +22,4 @@ jobs:
           instance-url: ${{ secrets.SN_INSTANCE_URL }}
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
-          change-details: '{"build_number":"35","pipeline_name":"sarangitfree/Now_DevOps_CD/CD GitHub workflow","stage_name":"ChangeRequest"}'
+          change-details: '{"build_number":"7537133230","pipeline_name":"sarangitfree/Now_DevOps_CD/CD GitHub workflow","stage_name":"ChangeRequest"}'
