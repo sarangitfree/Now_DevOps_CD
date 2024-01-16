@@ -26,6 +26,7 @@ jobs:
 
  chgupdate1:
     name: Update Change1
+    needs: chgupdate
     runs-on: ubuntu-latest
     steps:     
       - name: ServiceNow Update Change
