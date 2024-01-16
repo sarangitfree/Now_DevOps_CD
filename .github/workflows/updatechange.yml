@@ -21,7 +21,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           instance-url: ${{ secrets.SN_INSTANCE_URL }}
           context-github: ${{ toJSON(github) }}
-          change-request-number: 'CHG123456'
+          change-request-number: 'CHG0030087'
           change-request-details: '{"state":"-1","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
 
  chgupdate1:
@@ -36,5 +36,5 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           instance-url: ${{ secrets.SN_INSTANCE_URL }}
           context-github: ${{ toJSON(github) }}
-          change-request-number: 'CHG123456'
+          change-request-number: 'CHG0030087'
           change-request-details: '{"state":"0","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
