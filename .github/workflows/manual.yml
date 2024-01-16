@@ -1,0 +1,39 @@
+# This is a basic workflow that is manually triggered
+
+name: Manual workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+   
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+ chgupdate:
+    name: Update Change
+    runs-on: ubuntu-latest
+    steps:     
+      - name: ServiceNow Update Change
+        uses: ServiceNow/servicenow-devops-update-change@v2.0.0
+        with:
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          context-github: ${{ toJSON(github) }}
+          change-request-number: 'CHG123456'
+          change-request-details: '{"state":"-1","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
+
+ chgupdate1:
+    name: Update Change1
+    runs-on: ubuntu-latest
+    steps:     
+      - name: ServiceNow Update Change
+        uses: ServiceNow/servicenow-devops-update-change@v2.0.0
+        with:
+          devops-integration-token: ${{ secrets.SN_DEVOPS_INTEGRATION_TOKEN }}
+          tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
+          instance-url: ${{ secrets.SN_INSTANCE_URL }}
+          context-github: ${{ toJSON(github) }}
+          change-request-number: 'CHG123456'
+          change-request-details: '{"state":"0","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
