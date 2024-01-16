@@ -41,7 +41,7 @@ jobs:
           tool-id: ${{ secrets.SN_ORCHESTRATION_TOOL_ID }}
           context-github: ${{ toJSON(github) }}
           job-name: 'ChangeRequest'
-          change-request: '{"setCloseCode":"true","autoCloseChange":true,"attributes":{"assignment_group":"0a52d3dcd7011200f2d224837e6103f2","start_date":"2024-01-30 10:15:35","end_date":"2024-01-30 12:20:13","short_description":"DevOps Application Deployment for the application referred in the CI","cmdb_ci":"6d43d89b97ab7110faaff84de053af14"}}'
+          change-request: '{"setCloseCode":"true","autoCloseChange":true,"attributes":{"assignment_group":"0a52d3dcd7011200f2d224837e6103f2","short_description":"DevOps Application Deployment for the application referred in the CI","cmdb_ci":"6d43d89b97ab7110faaff84de053af14"}}'
           interval: '100'
           timeout: '3600'
           changeCreationTimeOut: '3600'
