@@ -22,7 +22,7 @@ jobs:
           instance-url: ${{ secrets.SN_INSTANCE_URL }}
           context-github: ${{ toJSON(github) }}
           change-request-number: 'CHG0030087'
-          change-request-details: '{"state":"-1","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
+          change-request-details: '{"state":"Implement","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
 
  chgupdate1:
     name: Update Change1
@@ -37,4 +37,4 @@ jobs:
           instance-url: ${{ secrets.SN_INSTANCE_URL }}
           context-github: ${{ toJSON(github) }}
           change-request-number: 'CHG0030087'
-          change-request-details: '{"state":"0","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
+          change-request-details: '{"state":"Review","work_notes":"This change request state is being modified per Dev Ops Pipeline"}'
