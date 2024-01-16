@@ -25,7 +25,7 @@ jobs:
           context-github: ${{ toJSON(github) }}
           job-name: 'Register Package'
           artifacts: 
-            '[{"name": "saran-test-app-devops-chg-33.jar","version": "3.33","semanticVersion": "3.33.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
+            '[{"name": "saran-test-app-devops-chg-35.jar","version": "3.35","semanticVersion": "3.35.0","repositoryName": "sarangitfree/Now_DevOps_CI"},{"name": "saran-test-app-devops-chg-34.jar","version": "3.34","semanticVersion": "3.34.0","repositoryName": "sarangitfree/Now_DevOps_CI"}]'
           package-name: 'saran-test-app-devops-chg-velo-${{ github.run_number }}.war'
     
   changereq:
